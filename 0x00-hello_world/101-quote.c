@@ -10,14 +10,7 @@
 int main(void)
 {
 	
-	char c[]="and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-	for(int i=0;c[i]!=NULL;i++)
-	{
-		putchar(c[i]);
-
-	}
-
-
+	write(2,and that piece of art is useful\" - Dora Korpar, 2015-10-19\n,59);
 
 	return (1);
 }
