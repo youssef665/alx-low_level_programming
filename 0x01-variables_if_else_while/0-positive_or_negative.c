@@ -2,12 +2,12 @@
 #include <time.h>
 #include <stdio.h>
 
-/*
+/**
  * main - Entry point
  *
  * Return: Always 0
  */
-/* checks if the number is postive, negative or zero*/
+/*:x:x checks if the number is postive, negative or zero*/
 int main(void)
 {
 	int n;
