@@ -10,14 +10,15 @@
 /* c program to get the last digit and check the requirments */
 
 /* betty style doc for function main goes there */
+
 int main(void)
 {
 	int n;
-	int l= n%10;
 	
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
+	int l= n%10;
 	if(l > 5)
 	{
 		printf("Last digit of %d is %d and is greater than 5\n", n, l);
