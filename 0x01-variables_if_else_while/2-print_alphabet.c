@@ -6,9 +6,12 @@
  */
 /*c program that prints the alphapets */
 
-int main(void){
+int main(void)
+{
 	int i;
-	for(i = 'a'; i < 'z'; i++)
+
+	for (i = 'a'; i <= 'z'; i++)
+
 		putchar(i);
 
 
