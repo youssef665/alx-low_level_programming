@@ -7,7 +7,7 @@
  *
  * Return: Always 0
  */
-/* c program to get the last digit and check the requirments
+/* c program to get the last digit and check the requirments */
 
 /* betty style doc for function main goes there */
 int main(void)
