@@ -5,7 +5,7 @@
 /*
  * main - Entry point
  *
- * Return: Always 0 
+ * Return: Always 0
  */
 /* checks if the number is postive, negative or zero*/
 int main(void)
@@ -20,8 +20,8 @@ int main(void)
 
 	printf("%d is positive\n", n);
 
-	}	
-	 else if (n == 0)
+	}
+	else if (n == 0)
 	{
 
 	printf("%d is zero\n", n);
