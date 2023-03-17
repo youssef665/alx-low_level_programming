@@ -2,6 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /*check if the number postive ,negative or zero*/
+
 /* main - Entry point
  *
  * Return: Always 0 
