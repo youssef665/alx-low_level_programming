@@ -2,12 +2,14 @@
 #include "main.h"
 /**
  * function print_alphabet to print the alphaet
+ *
+ * Return: Always 0
  */
 
 void print_alphabet(void)
 {
 	char i = 'a';
-	
+
 	while (i <= 'z')
 	{
 		putchar(i);
