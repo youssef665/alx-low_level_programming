@@ -13,7 +13,7 @@ void printalphabet(char l)
 	
 	while (i < 'z')
 	{
-		puthcar(i);
+		putchar(i);
 		i++;
 	}
 		putchar('\n');
