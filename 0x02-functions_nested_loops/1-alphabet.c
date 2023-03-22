@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  *
  * function to print the alphaet
