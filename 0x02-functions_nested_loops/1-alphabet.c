@@ -1,13 +1,10 @@
 #include <stdio.h>
 /**
- * main - Entry point
- *
- * Return: Always 0
  *
  * function to print the alphaet
  */
 
-void printalphabet()
+void printalphabet(void)
 {
 	char i = 'a';
 	
@@ -19,15 +16,4 @@ void printalphabet()
 		putchar('\n');
 
 
-}
-
-
-
-int main(void)
-{
-	printalphabet();
-
-
-
-	return (0);
 }
