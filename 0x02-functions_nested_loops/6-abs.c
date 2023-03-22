@@ -2,14 +2,13 @@
 #include "main.h"
 /**
  * _abs - a function that computes the absolute value of integers
- *@int: Frist operand
+ *@z: Frist operand
  *
  * Return: always postive integer
  */
 
-int _abs(int)
+int _abs(int z)
 {
-	int z;
 
 	if (z < 0)
 
