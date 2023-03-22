@@ -1,20 +1,17 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *
- * function to print the alphaet
+ * function print_alphabet to print the alphaet
  */
 
 void print_alphabet(void)
 {
 	char i = 'a';
 	
-	while (i < 'z')
+	while (i <= 'z')
 	{
 		putchar(i);
 		i++;
 	}
-		putchar('\n');
-
-
+		putchar('\n'):
 }
