@@ -7,9 +7,9 @@
  * function to print the alphaet
  */
 
-void printalphabet(char i)
+void printalphabet()
 {
-
+	char i = 'a';
 	
 	while (i < 'z')
 	{
@@ -25,8 +25,7 @@ void printalphabet(char i)
 
 int main(void)
 {
-	char z = 'a';
-	printalphabet(z);
+	printalphabet();
 
 
 
