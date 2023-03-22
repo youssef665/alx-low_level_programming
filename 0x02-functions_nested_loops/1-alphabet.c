@@ -9,7 +9,7 @@
 
 void printalphabet(char i)
 {
-	 i = 'a';
+
 	
 	while (i < 'z')
 	{
@@ -25,7 +25,7 @@ void printalphabet(char i)
 
 int main(void)
 {
-	char z;
+	char z = 'a';
 	printalphabet(z);
 
 
