@@ -10,11 +10,11 @@ int main(void)
 {
 	char arr[] = "_putchar";
 	int i = 0;
-
-	while ( arr[i] < 8 )
+	
+	while ( i < 8 )
 	{
-		putchar(i);
-
+		putchar(a[i]);
+		i++;
 	}
 
 		putchar('\n');
