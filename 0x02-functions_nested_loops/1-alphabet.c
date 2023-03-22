@@ -5,7 +5,7 @@
  * function to print the alphaet
  */
 
-void printalphabet(void)
+void print_alphabet(void)
 {
 	char i = 'a';
 	
@@ -17,4 +17,11 @@ void printalphabet(void)
 		putchar('\n');
 
 
+}
+
+int main(void)
+{
+	print_alphabet();
+
+	return (0);
 }
