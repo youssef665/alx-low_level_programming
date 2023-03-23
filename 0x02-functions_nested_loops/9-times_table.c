@@ -15,9 +15,8 @@ void times_table(void)
 		{
 
 			k = i*j;
-			putchar(k + '0');
-			putchar(',');
-
+			printf("%d,  ",k);
+		
 		}
 		
 	
