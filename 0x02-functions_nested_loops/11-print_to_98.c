@@ -23,9 +23,9 @@ void print_to_98(int n)
 			}
 				
 			printf(", ");
+			putchar('\n');
 	
 		}
-		putchar('\n');
 	}
 	else
 	{
