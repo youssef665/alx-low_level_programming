@@ -13,7 +13,11 @@ void more_numbers(void)
 	{
 		for (j = 0; j <= 14; j++)
 		{
-			printf("%d", j);
+			if (b / 10 != 0)
+			{
+				putchar(b / 10 + '0');
+			}
+			putchar(b % 10 + '0');
 		}
 		putchar('\n');
 	}
