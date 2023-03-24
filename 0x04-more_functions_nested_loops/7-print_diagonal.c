@@ -1,28 +1,27 @@
 #include "main.h"
 
 /**
- * print_triangle -  checks for checks for a digit (0 through 9).
- * @size: size -  Variable
+ * print_diagonal -  checks for checks for a digit (0 through 9).
+ * @n: n -  Variable
+ *
  * Return: Always 0.
  */
-void print_triangle(int size)
+void print_diagonal(int n)
 {
 	int x, y;
 
-	if (size > 0)
+	if (n > 0)
 	{
-		for (x = 1; x <= size; x++)
+		for (x = 1; x <= n; x++)
 		{
-			for (y = 1; y <= size; y++)
+			for (y = 1; y <= n; y++)
 			{
-				if (y <= size - x)
+				if (x == y)
 				{
-					_putchar(' ');
+					_putchar(92);
+					break;
 				}
-				else
-				{
-					_putchar('#');
-				}
+				_putchar(' ');
 			}
 			_putchar('\n');
 		}
@@ -32,4 +31,3 @@ void print_triangle(int size)
 		_putchar('\n');
 	}
 }
-
