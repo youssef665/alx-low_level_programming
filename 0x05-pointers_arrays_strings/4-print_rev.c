@@ -17,9 +17,10 @@ void print_rev(char *s)
 	}
 	 i = c - 1;
 
-	while ( i != 0)
+	while (i != -1)
 	{
 		putchar(*(s + i));
 		i--;
 	}
+	putchar('\n');
 }
