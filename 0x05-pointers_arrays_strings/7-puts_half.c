@@ -1,39 +1,26 @@
 #include <stdio.h>
 /**
- *  puts_half - a function that prints haif of the string
- *  @str: pointer of characters
+ * puts_half - prints half of string
+ * Return: length of string
+ * @str: string
  */
-
-void puts_half(char *s)
+void puts_half(char *str)
 {
-	int i = 1;
-	while (*(s+i) != '\0')
+	int c = 0;
+
+	int i;
+
+	while (str[c] != 0)
 	{
-		i++;
+		c++;
 	}
-	if (i % 2== 0)
+	for (i = 0; i < c; i++)
 	{
-		i = i/2;
-		
-		while (* (s+i)!= '\0')
-		{
-		
-			putchar(*(s+i));
-		i++;
-		}
-		putchar('\n');
+		if (c % 2 == 0 && i >= c / 2)
+			_putchar(str[i]);
+		else if (c % 2 != 0 && i >= c - ((c - 1) / 2))
+			_putchar(str[i]);
 	}
 
-else
-{
-
-	i = (i-1)/2;
-	while (* (s+i)!= '\0')
-	{
-		putchar(*(s+i));
-		i++;
-	}
-	putchar('\n');
-
-    }
+	_putchar('\n');
 }
