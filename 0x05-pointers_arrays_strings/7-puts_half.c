@@ -16,9 +16,11 @@ void puts_half(char *s)
 		i = i/2;
 		
 		while (* (s+i)!= '\0')
+		{
 		
 			putchar(*(s+i));
 		i++;
+		}
 	}
 
 else
