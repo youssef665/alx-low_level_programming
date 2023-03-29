@@ -21,6 +21,7 @@ void puts_half(char *s)
 			putchar(*(s+i));
 		i++;
 		}
+		putchar('\n');
 	}
 
 else
@@ -32,6 +33,7 @@ else
 		putchar(*(s+i));
 		i++;
 	}
+	putchar('\n');
 
     }
 }
