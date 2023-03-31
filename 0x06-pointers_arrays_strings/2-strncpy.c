@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * _strncpy - Write a function that copies a string, with number of bytes
  * @dest: This is the output dest

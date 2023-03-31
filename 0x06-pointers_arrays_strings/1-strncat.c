@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * _strncat - Write a function that concatenates two strings. it will use at
