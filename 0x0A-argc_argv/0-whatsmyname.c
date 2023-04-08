@@ -1,6 +1,8 @@
 #include <stdio.h>
 /**
- * main _ Entry point 
+ * main - Entry point
+ *@argc: first int argument
+ *@argv: an array of string argument
  *
  * Return: Always 0
  */
