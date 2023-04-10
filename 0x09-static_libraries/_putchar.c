@@ -1,24 +1,13 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * _putchar - writes the character to stdout
+ *@c: character to print
  *
- * Return: Always 0
  *
- * program to print _putchar
+ * Return: on success 1
  */
 
-int main(void)
+int _putchar(char c)
 {
-	char arr[] = "_putchar";
-	int i = 0;
-
-	while (i < 8)
-	{
-		putchar(arr[i]);
-		i++;
-	}
-
-		putchar('\n');
-
-		return (0);
+	return (write(1, &c, 1));
 }
