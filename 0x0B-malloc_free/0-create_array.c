@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * create_array - a function that creates arr of chars and intilize it with char
+ * create_array - a funct that creates arr of chars and intilize it with char
  * @size: a postive integer value
  * @c: a character argument
  *
@@ -20,7 +20,7 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	else 
+	else if (size != 0)
 	{
 		ptr = (char *)malloc(size * sizeof(char));
 		if (ptr != NULL)
