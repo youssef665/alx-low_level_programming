@@ -1,5 +1,6 @@
 #include "function_pointers.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * array_iterator - function that executes a function for elements int array
