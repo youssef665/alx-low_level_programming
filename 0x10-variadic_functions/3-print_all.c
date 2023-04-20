@@ -2,19 +2,19 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
- * print_all - Entry Point
- * c = char, i = int, f = float, s = char * (if null print (nil))
+ * print_all - function that prints anything
+ * c = char, i = int, f = float, s = char * 
  * @format: list of arg types
  * Return: 0
  */
 void print_all(const char * const format, ...)
 {
-	va_list valist;
+	va_list v;
 	int n = 0, i = 0;
 	char *s = ", ";
 	char *str;
 
-	va_start(valist, format);
+	va_start(v, format);
 
 	while (format && format[i])
 		i++;
@@ -28,16 +28,16 @@ void print_all(const char * const format, ...)
 		switch (format[n])
 		{
 		case 'c':
-			printf("%c%s", va_arg(valist, int), s);
+			printf("%c%s", va_arg(v, int), s);
 			break;
 		case 'i':
-			printf("%d%s", va_arg(valist, int), s);
+			printf("%d%s", va_arg(v, int), s);
 			break;
 		case 'f':
-			printf("%f%s", va_arg(valist, double), s);
+			printf("%f%s", va_arg(v, double), s);
 			break;
 		case 's':
-			str = va_arg(valist, char *);
+			str = va_arg(v, char *);
 			if (str == NULL)
 				str = "(nil)";
 			printf("%s%s", str, s);
@@ -46,5 +46,5 @@ void print_all(const char * const format, ...)
 		n++;
 	}
 	printf("\n");
-	va_end(valist);
+	va_end(v);
 }
