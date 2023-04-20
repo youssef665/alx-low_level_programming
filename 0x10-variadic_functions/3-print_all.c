@@ -3,7 +3,7 @@
 #include "variadic_functions.h"
 /**
  * print_all - function that prints anything
- * c = char, i = int, f = float, s = char * 
+ * c = char, i = int, f = float, s = char *
  * @format: list of arg types
  * Return: 0
  */
