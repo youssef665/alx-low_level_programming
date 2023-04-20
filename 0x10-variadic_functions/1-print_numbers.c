@@ -36,6 +36,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			putchar(*(separator + c));
 		}
 	}
+	putchar("\n");
 
 	va_end(p);
 }
