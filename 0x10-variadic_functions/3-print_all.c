@@ -1,6 +1,6 @@
-#include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
+#include "variadic_functions.h"
 /**
  * print_all - Entry Point
  * c = char, i = int, f = float, s = char * (if null print (nil))
