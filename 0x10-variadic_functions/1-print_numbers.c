@@ -1,10 +1,11 @@
 #include <stdarg.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include "variadic_functions.h"
 
 /**
  * print_numbers - a function that prints numbers + new line
- * @seprator: the seprataor between numbers
+ * @separator: the seprataor between numbers
  * @n: postive integer
  * @...: number of argument passed
  */
@@ -15,7 +16,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	char c;
 
-	va_start(p,seprator);
+	va_start(p, n);
 
 	for (i = 0; i < n; i++)
 	{
@@ -25,7 +26,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		{
 			continue;
 		}
-		if (i == n-1)
+		if (i == n - 1)
 		{
 			continue;
 		}
@@ -35,6 +36,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			putchar(*(separator + c));
 		}
 	}
-	
+
 	va_end(p);
 }
