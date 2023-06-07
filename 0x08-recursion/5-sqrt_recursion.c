@@ -11,10 +11,13 @@
 int number(int x, int y)
 {
 	if (y * y > x)
+	{
 		return (-1);
+	}
 	else if (y * y == x)
+	{
 		return (y);
-
+	}
 		number(x, y + 1);
 }
 
