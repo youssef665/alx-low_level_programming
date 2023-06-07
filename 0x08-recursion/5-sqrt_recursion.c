@@ -1,4 +1,4 @@
-#include "main."
+#include "main.h"
 
 /**
  * number - a function that get the square root
