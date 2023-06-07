@@ -23,7 +23,7 @@ int p(char *x, int y)
 
 int pcomp(char *a, int b)
 {
-	if (*a != *(a + l))
+	if (*a != *(a + b))
 		return (0);
 	else if (*a == 0)
 		return (1);
