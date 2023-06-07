@@ -18,11 +18,6 @@ int _strlen_recursion(char *s)
 
 	else
 	{
-		_strlen_recursion(s + 1);
-
-		counter++;
+		return (1 + _strlen_recursion(s + 1));
 	}
-
-	return (counter);
 }
-
