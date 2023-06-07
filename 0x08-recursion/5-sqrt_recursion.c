@@ -18,7 +18,7 @@ int number(int x, int y)
 	{
 		return (y);
 	}
-		number(x, y + 1);
+		return (number(x, y + 1);
 }
 
 /**
