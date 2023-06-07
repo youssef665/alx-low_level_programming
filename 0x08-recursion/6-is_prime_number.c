@@ -13,7 +13,7 @@ int p(int x, int y)
 		return (1);
 	else if (x % y == 0)
 		return (0);
-	return (prime2(x, y + 1));
+	return (p(x, y + 1));
 }
 /**
  * is_prime_number - checks if a number is prime
