@@ -14,13 +14,15 @@ int main(int argc, char *argv[])
 {
 	if(argc == 3)
 	{
-		int i;
+		int i, mul = 1;
 
 		for (i = 1; i < argc; i++)
 		{
-			printf("%d\n", atoi(argv[i]) * atoi(argv[i+1]));
+			mul *=atoi(argv[i]);
+
 		}
-		return (0);
+		printf("%d\n", mul);
+
 	}
 	else
 	{
@@ -28,4 +30,6 @@ int main(int argc, char *argv[])
 
 		return (1);
 	}
+
+	return (0);
 }
