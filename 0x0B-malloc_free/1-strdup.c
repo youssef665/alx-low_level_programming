@@ -18,23 +18,27 @@ char *_strdup(char *str)
 	unsigned int i;
 	int j;
 
+	if (str == NULL)
+		return (NULL);
 
 	for (j = 0; *(str + j) != '\0'; j++);
 
 
 	str2 = (char *) malloc(j + 1 * sizeof(char));
 
-	if (str == NULL)
-		return (NULL);
-
-
-	else
+	if (str2 != NULL)
 	{
+	
+	
 		for (i = 0; *(str + i) != '\0'; i++)
 		{
 			str2[i] = str[i];
 		}
 
+	}
+	else
+	{
+		return (NULL);
 	}
 	str2[i] = '\0';
 
