@@ -5,7 +5,7 @@
 /**
  * strtow - splits a string into words
  *@str: pointer to sring argument
- *@av: argument vecotr
+ *
  * Return: a pointer to a  string
  */
 char **strtow(char *str)
