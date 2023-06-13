@@ -3,20 +3,20 @@
 #include <stdlib.h>
 
 /**
- * _strdup - a function that return a pointer to a 
+ * _strdup - a function that return a pointer to a
  * new allocated space in memory which contains copy of the string
  * @str: is a pointer to character argument
  *
- * Return: NULL if str is NULL or insufficient memory 
+ * Return: NULL if str is NULL or insufficient memory
  * on success returns a pointer
  */
 
 char *_strdup(char *str)
 {
-	char * str2;
+	char *str2;
 	int i;
 
-	str2 = (char*) malloc(sizeof(char));
+	str2 = (char *) malloc( 10 *sizeof(char));
 
 	if (str == NULL)
 		return (NULL);
