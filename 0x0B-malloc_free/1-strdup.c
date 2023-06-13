@@ -15,9 +15,11 @@
 char *_strdup(char *str)
 {
 	char *str2;
-	int i, j;
+	unsigned int i;
+	int i;
 
-	for (j = 0; *(str + j) != '\0'; j++)
+
+	for (j = 0; *(str + j) != '\0'; j++);
 	
 	str2 = (char *) malloc(j + 1 * sizeof(char));
 
