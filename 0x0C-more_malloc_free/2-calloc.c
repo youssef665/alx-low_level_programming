@@ -6,7 +6,7 @@
   * @nmemb: first postive integer argument
   * @size: potive integer for size
   *
-  * Return: pointer or null 
+  * Return: pointer or null
   */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
