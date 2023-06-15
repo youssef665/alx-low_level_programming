@@ -6,28 +6,28 @@
   * @nmemb: first postive integer argument
   * @size: potive integer for size
   *
-  * Return: 
+  * Return: pointer or null 
   */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	int i = 0, l = 0;
-	char *p;
+	char *c;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
 	l = nmemb * size;
-	p = malloc(l);
+	c = malloc(l);
 
-	if (p == NULL)
+	if (c == NULL)
 		return (NULL);
 
 	while (i < l)
 	{
-		p[i] = 0;
+		c[i] = 0;
 		i++;
 	}
 
-	return (p);
+	return (c);
 }
