@@ -8,25 +8,26 @@
   *
   * Return: 
   */
+
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int i = 0, d = 0;
-	char *c;
+	int i = 0, l = 0;
+	char *p;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	d = nmemb * size;
-	c = malloc(d);
+	l = nmemb * size;
+	p = malloc(l);
 
-	if (c == NULL)
+	if (p == NULL)
 		return (NULL);
 
-	while (i < d)
+	while (i < l)
 	{
 		p[i] = 0;
 		i++;
 	}
 
-	return (c);
+	return (p);
 }
