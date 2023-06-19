@@ -1,5 +1,5 @@
-#ifndef dog_h
-#define dog_h
+#ifndef dog_H
+#define dog_H
 
 /**
  * struct dog - contains attributes of a dog
@@ -19,6 +19,7 @@ struct dog
 /**
  * dog_t - Typedef for struct dog
  */
+Typdef struct dog dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
