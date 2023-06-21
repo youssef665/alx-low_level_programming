@@ -12,8 +12,8 @@
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	unsigned int s;
-	unsigned int i;
+	 int s ;
+	 int i;
 
 	if (array == NULL ||  cmp == NULL)
 		return;
