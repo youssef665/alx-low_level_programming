@@ -1,5 +1,5 @@
 #include "lists.h"
-#include <stdlib.>
+#include <stdlib.h>
 /**
  * free_list - free a list
  * @head:  pointer to the head of the list
@@ -17,3 +17,4 @@ void free_list(list_t *head)
 		free(head);
 		head = t;
 	}
+}
