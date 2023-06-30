@@ -2,7 +2,7 @@
 
 /**
  * list_len - returns the numbeir of elements in a linked list
- * @h: pointer 
+ * @h: pointer
  *
  * Return:  number of elements
 */
