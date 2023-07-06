@@ -2,7 +2,7 @@
 
 /**
  * set_bit - a function that sets
- * value of bit to 1 
+ * value of bit to 1
  * @n: pointer to value
  * @index: the index
  *
