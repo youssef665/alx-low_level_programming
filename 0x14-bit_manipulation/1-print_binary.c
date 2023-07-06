@@ -10,9 +10,16 @@
 
 void print_binary(unsigned long int n)
 {
-	if (n > 1)
+	if (n == 0)
 	{
-		print_binary(n >> 1);
+		putchar('0');
+		return;
 	}
-	printf("%lu", n & 1UL);
+	else if (n == 1)
+	{
+		putchar ('1');
+		return;
+	}
+	print_binary(n >> 1);
+	putchar('0' + (n & 1));
 }
