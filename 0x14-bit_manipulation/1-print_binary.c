@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_binary - a function that prints the
@@ -13,5 +14,5 @@ void print_binary(unsigned long int n)
 	{
 		print_binary(n >> 1);
 	}
-	printf("%u", n & 1);
+	printf("%lu", n & 1);
 }
