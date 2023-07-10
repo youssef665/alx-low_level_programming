@@ -1,7 +1,10 @@
 #include <elf.h>
 #include <sys/types.h>
 #include <sys/stat.h>
-#include "main.h"
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <fcntl.h>
 
 void check_elf(unsigned char *e_ident);
 void print_magic(unsigned char *e_ident);
