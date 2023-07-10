@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-int f1, f2;
+int f1, f2; 
 int n1 = 1024, n2 = 0;
 char buf[1024];
 
