@@ -1,7 +1,8 @@
 #include <elf.h>
 #include <sys/types.h>
 #include <sys/stat.h>
-#include <main.h>
+#include "main.h"
+
 void check_elf(unsigned char *e_ident);
 void print_magic(unsigned char *e_ident);
 void print_class(unsigned char *e_ident);
