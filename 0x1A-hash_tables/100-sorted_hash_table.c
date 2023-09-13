@@ -18,7 +18,7 @@ void sorted_list(shash_table_t *ht, shash_node_t *new_node)
 		return;
 	}
 	do {
-		if (strcmp(new_node->key, sbucket->key) < 0)
+		if (strcmp(new_node->key, sb->key) < 0)
 		{
 			new_node->snext = sb;
 			new_node->sprev = sb->sprev;
@@ -81,7 +81,7 @@ shash_table_t *shash_table_create(unsigned long int size)
 int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int in = 0;
-	char vc, *kc;
+	char *vc, *kc;
 	shash_node_t  *b, *newn;
 
 	if (!ht || !key || !*key || !value)
@@ -91,7 +91,6 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		return (0);
 	in = key_index((const unsigned char *)key, ht->size);
 	b = ht->array[in];
-
 	while (b)
 	{
 		if (!strcmp(key, b->key))
@@ -103,7 +102,6 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 
 		b = b->next;
 	}
-
 	newn = calloc(1, sizeof(shash_node_t));
 	if (newn == NULL)
 	{
@@ -119,7 +117,6 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 	newn->next = ht->array[in];
 	ht->array[in] = newn;
 	sorted_list(ht, newn);
-
 	return (1);
 }
 /**
@@ -215,7 +212,7 @@ void shash_table_delete(shash_table_t *ht)
 
 	for (j = 0; j < ht->size; j++)
 	{
-		bucket = ht->array[j];
+		b = ht->array[j];
 		while (b)
 		{
 			af = b;
