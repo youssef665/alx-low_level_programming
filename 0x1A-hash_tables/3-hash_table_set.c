@@ -41,17 +41,14 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		free(vc);
 		return (0);
 	}
-
 	kc = strdup(key);
 	if (!kc)
 		return (0);
 
 	newn->key = kc;
-
 	newn->value = vc;
 	newn->next = ht->array[in];
 	ht->array[in] = newn;
 	return (1);
-
 }
 
